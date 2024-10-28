@@ -1,4 +1,3 @@
----
 
 # LumiDent Care
 
@@ -25,5 +24,3 @@
 ## Project Goals
 
 LumiDent Care aims to make quality dental services easily accessible online, simplifying patient engagement, scheduling, and information gathering. The app focuses on creating a clean, approachable interface that helps patients feel confident about their dental choices.
-
----
