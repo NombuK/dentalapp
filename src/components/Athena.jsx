@@ -21,18 +21,18 @@ export default function Athena() {
     event.preventDefault();
 
     if (userInput.trim()) {
-      // Add user's message to the chat
+      
       const userMessage = { sender: "User", text: userInput };
       setMessages((prevMessages) => [...prevMessages, userMessage]);
 
-      // Set up the API call
+     
       const apiKey = "4obaa93faa4d0abd12t05933a7d742d3";
       const prompt = `Generate general dental answers on ${userInput}`;
       const context =
         "You are a dentist call center and you always have short answers to motivate people and answer them accordingly. User instructions are: Your mission is to generate a short answer. Make sure to follow user instructions.";
       const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-      // Display "typing" animation and send request
+      
       setLoading(true);
       setUserInput("");
 
