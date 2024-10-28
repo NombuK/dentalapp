@@ -1,0 +1,773 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Karla", sans-serif;
+}
+
+.mainContent {
+  display: none;
+}
+
+.homeBackground,
+.pricingBackground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+  background: url("public/images/front1.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.homeBackground::before,
+.pricingBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.homeTitle {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: rgb(20, 83, 201);
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.homeTitle p {
+  color: #ffffff;
+}
+
+.homeButton,
+.headerButton {
+  z-index: 3;
+  justify-content: center;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(20, 83, 201);
+  box-shadow: 3px 3px 0 0 rgb(20, 83, 201);
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: rgb(20, 83, 201);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homeButton:hover,
+.headerButton:hover {
+  color: #ffffff;
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 0 rgb(76, 118, 160);
+  background-color: rgb(20, 83, 201);
+}
+
+button i {
+  font-size: 24px;
+  color: rgb(11, 122, 226);
+  margin-left: 8px;
+  justify-content: end;
+  vertical-align: middle;
+}
+
+button:hover i {
+  color: rgb(226, 229, 231);
+}
+
+.introPic {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.introPic p {
+  font-size: 15px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(20, 83, 201);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.name{
+  font-size: 30px;
+}
+
+.header .name {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.header .name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(9, 152, 209);
+  transition: width 0.4s ease;
+}
+
+.header .name:hover::after {
+  width: 100%;
+}
+
+.headerButton {
+  box-shadow: 3px 3px 0 0 rgb(9, 152, 209);
+}
+
+.headerButton:hover {
+  background-color: rgb(9, 152, 209);
+}
+
+.icon-tooth {
+  font-size: 40px;
+}
+
+.toothIcon {
+  margin-right: 35px;
+}
+
+.greeting {
+  margin: 30px;
+  margin-bottom: 0;
+  color: rgb(20, 83, 201);
+  text-align: center;
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.recommendations h1,
+.th2,
+.starParagraph h2,
+.service h5 {
+  text-align: center;
+  color: #1809e0;
+  text-shadow: 5px 5px 10px;
+}
+
+.recommendations ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recommendations li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex: 1 1 45%;
+  margin: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  position: relative;
+}
+
+.recommendations li::before {
+  content: "\f164";
+  margin-right: 10px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: blue;
+}
+
+.location {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1809e0;
+  transition: all 200ms ease-in-out;
+}
+
+.contact {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.referalLink a {
+  color: black;
+}
+
+.referalLink {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  color: #ffffff;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: rgb(41, 96, 197);
+  margin: 0;
+  padding: 20px;
+}
+
+.pricing {
+  text-align: center;
+}
+
+.pricingHeading {
+  background-color: rgb(20, 83, 201);
+  padding: 20px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.pricingBackground {
+  background-repeat: no-repeat;
+  justify-content: start;
+  background: url("public/images/front2.webp") no-repeat center center;
+}
+
+.pricingBackground p {
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  max-width: 600px;
+  margin: 10% auto;
+  text-align: start;
+  padding: 30px;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricingBackground::before {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.feeStructure br {
+  display: block;
+  margin-top: 10px;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeInOut 21s infinite;
+}
+
+.teamGreeting {
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 5px 5px 10px;
+  color: #1809e0;
+}
+
+.profession {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profession p,
+.starParagraph,
+.patientReview,
+.service p {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: start;
+  padding: 30px;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.profession strong {
+  font-size: 35px;
+  color: #1809e0;
+}
+
+.reviewStar {
+  font-size: 35px;
+  color: #ffd700;
+}
+
+.reviewStarContainer {
+  text-align: center;
+}
+
+.rate {
+  text-align: center;
+  margin-left: 0px auto;
+}
+
+.th2 {
+  font-size: 35px;
+}
+
+.starParagraph {
+  margin: 0px;
+  max-width: 500px;
+}
+
+.starView {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonials,
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.patientImage {
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 20px;
+  gap: 10;
+  margin: 10px;
+}
+
+.patientReview {
+  max-width: 300px;
+}
+
+.service {
+  text-align: start;
+  justify-content: center;
+}
+
+.serviceImage {
+  border-radius: 15px;
+}
+
+.service h5 {
+  font-size: 20px;
+}
+
+.service p {
+  max-width: 300px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.appointment-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.appointment-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.appointment-form button:hover {
+  background-color: #45a049;
+}
+
+/* Chat Button */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1214a5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.chatbot-window {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #2806c2;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message.user {
+  text-align: right;
+  color: rgb(0, 89, 255);
+}
+
+.message.athena {
+  text-align: left;
+  color: rgb(13, 13, 14);
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.chatbot-input button {
+  background-color: #183de0;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  animation-delay: 3s;
+}
+.slide:nth-child(3) {
+  animation-delay: 6s;
+}
+.slide:nth-child(4) {
+  animation-delay: 9s;
+}
+.slide:nth-child(5) {
+  animation-delay: 12s;
+}
+.slide:nth-child(6) {
+  animation-delay: 15s;
+}
+.slide:nth-child(7) {
+  animation-delay: 18s;
+}
+
+@media (max-width: 1024px) {
+  .header,
+  .introPic,
+  .contact,
+  .recommendations ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header .name {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .greeting,
+  .homeTitle {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+
+  .recommendations li,
+  .services {
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .profession,
+  .service p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .serviceImage,
+  .patientImage {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .appointment-form {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeBackground,
+  .pricingBackground {
+    height: 60vh;
+    background-position: center top;
+  }
+
+  .homeTitle,
+  .greeting {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .header,
+  .recommendations ul,
+  .services {
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .recommendations li {
+    flex: 1 1 100%;
+    font-size: 14px;
+    padding: 8px;
+    margin: 5px 0;
+  }
+
+  .homeButton,
+  .headerButton {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .introPic p,
+  .service p,
+  .recommendations ul,
+  .contact p {
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .icon-tooth {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .chatbot-window {
+    width: 90%;
+    height: 60vh;
+  }
+
+  .chatbot-header {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .chat-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .appointment-form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .profession strong,
+  .th2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .serviceImage,
+  .patientImage {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header,
+  .recommendations ul,
+  .services,
+  .contact,
+  .appointment-form {
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .homeTitle,
+  .greeting {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .recommendations li,
+  .service p,
+  .profession,
+  .service p,
+  .introPic p {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .homeButton,
+  .headerButton {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .chatbot-window {
+    width: 95%;
+    height: 50vh;
+  }
+
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .icon-tooth {
+    font-size: 20px;
+  }
+}
