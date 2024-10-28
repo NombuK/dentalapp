@@ -19,7 +19,7 @@ html {
   align-items: center;
   text-align: center;
   justify-content: end;
-  background: url("public/images/front1.webp");
+  background: url("/images/front1.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -116,7 +116,7 @@ button:hover i {
   flex-wrap: wrap;
 }
 
-.name{
+.name {
   font-size: 30px;
 }
 
