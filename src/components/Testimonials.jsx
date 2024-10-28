@@ -26,7 +26,7 @@ export default function Testimonials(props) {
             satisfaction. But don't just take our word for it—see what our
             valued patients have to say about their experiences with us.
           </p>
-          <img src="public/images/lab1.jpg" alt="" width={400} />
+          <img src="/images/lab1.jpg" alt="" width={400} />
         </div>
       </div>
     );
@@ -40,7 +40,7 @@ export default function Testimonials(props) {
         <div className="testimonials">
           <div>
             <img
-              src="public/images/p2.jpg"
+              src="/images/p2.jpg"
               alt="patient1"
               className="patientImage"
             />
@@ -53,7 +53,7 @@ export default function Testimonials(props) {
           </div>
           <div>
             <img
-              src="public/images/p4.jpg"
+              src="/images/p4.jpg"
               alt="patient"
               className="patientImage"
             />
@@ -66,7 +66,7 @@ export default function Testimonials(props) {
           </div>
           <div>
             <img
-              src="public/images/p3.jpg"
+              src="/images/p3.jpg"
               alt="patient"
               className="patientImage"
             />
@@ -80,7 +80,7 @@ export default function Testimonials(props) {
           </div>
           <div>
             <img
-              src="public/images/p6.jpg"
+              src="/images/p6.jpg"
               alt="patient"
               className="patientImage"
             />
@@ -94,7 +94,7 @@ export default function Testimonials(props) {
           </div>
           <div>
             <img
-              src="public/images/p1.jpg"
+              src="/images/p1.jpg"
               alt="patient"
               className="patientImage"
             />
@@ -108,7 +108,7 @@ export default function Testimonials(props) {
           </div>
           <div>
             <img
-              src="public/images/p5.jpg"
+              src="/images/p5.jpg"
               alt="patient"
               className="patientImage"
             />

@@ -7,13 +7,13 @@ export default function Team(props) {
   function Doctors() {
     return (
       <div class="slideshow-container">
-        <img src="public/images/doc1.jpg" alt="doc 1" class="slide" />
-        <img src="public/images/doc2.jpg" alt="doc 2" class="slide" />
-        <img src="public/images/doc3.jpg" alt="doc 3" class="slide" />
-        <img src="public/images/doc4.jpg" alt="doc 4" class="slide" />
-        <img src="public/images/doc5.jpg" alt="doc 5" class="slide" />
-        <img src="public/images/doc6.jpg" alt="doc 6" class="slide" />
-        <img src="public/images/doc7.jpg" alt="doc 7" class="slide" />
+        <img src="/images/doc1.jpg" alt="doc 1" class="slide" />
+        <img src="/images/doc2.jpg" alt="doc 2" class="slide" />
+        <img src="/images/doc3.jpg" alt="doc 3" class="slide" />
+        <img src="/images/doc4.jpg" alt="doc 4" class="slide" />
+        <img src="/images/doc5.jpg" alt="doc 5" class="slide" />
+        <img src="/images/doc6.jpg" alt="doc 6" class="slide" />
+        <img src="/images/doc7.jpg" alt="doc 7" class="slide" />
       </div>
     );
   }
@@ -24,7 +24,7 @@ export default function Team(props) {
         <h2 className='teamGreeting'>Your Smile Is Our Priority</h2>
         <div className="profession">
           <img
-            src="public/images/doc5.jpg"
+            src="/images/doc5.jpg"
             alt="doc 5"
             width={500}
             height={400}
@@ -53,7 +53,7 @@ export default function Team(props) {
             whenever possible
           </p>
           <img
-            src="public/images/doc7.jpg"
+            src="/images/doc7.jpg"
             alt="doc 7"
             width={500}
             height={400}
@@ -62,7 +62,7 @@ export default function Team(props) {
         <hr />
         <div className="profession">
           <img
-            src="public/images/doc3.jpg"
+            src="/images/doc3.jpg"
             alt="doc 3"
             width={500}
             height={400}
@@ -90,7 +90,7 @@ export default function Team(props) {
             serious health issues.
           </p>
           <img
-            src="public/images/doc6.jpg"
+            src="/images/doc6.jpg"
             alt="doc 6"
             width={500}
             height={400}
@@ -99,7 +99,7 @@ export default function Team(props) {
         <hr />
         <div className="profession">
           <img
-            src="public/images/doc1.jpg"
+            src="/images/doc1.jpg"
             alt="doc 1"
             width={500}
             height={400}

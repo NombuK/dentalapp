@@ -12,7 +12,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Cosmetic Dentistry</h5>
             <img
-              src="public/images/cosmeticDentistry.jpg"
+              src="/images/cosmeticDentistry.jpg"
               alt="cosmetic dentistry"
               width={300}
               className="serviceImage"
@@ -25,7 +25,7 @@ export default function Services(props) {
           <div className="service">
             <h5>TMD/TMJ Assessment</h5>
             <img
-              src="public/images/tmj-assessment.webp"
+              src="/images/tmj-assessment.webp"
               alt="tmj/tmd dentistry"
               width={300}
               className="serviceImage"
@@ -38,7 +38,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Sedation Dentistry</h5>
             <img
-              src="public/images/sedation-dentistry.jpeg"
+              src="/images/sedation-dentistry.jpeg"
               alt="sedation dentistry"
               width={300}
               className="serviceImage"
@@ -51,7 +51,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Mouth Guards</h5>
             <img
-              src="public/images/mouth-guard.jpg"
+              src="/images/mouth-guard.jpg"
               alt="mouth guards"
               width={300}
               className="serviceImage"
@@ -64,7 +64,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Dental Hygiene</h5>
             <img
-              src="public/images/dental-hygiene.png"
+              src="/images/dental-hygiene.png"
               alt="dental hygiene"
               width={300}
               className="serviceImage"
@@ -77,7 +77,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Gum Treatment</h5>
             <img
-              src="public/images/gum-treatment.jpg"
+              src="/images/gum-treatment.jpg"
               alt="gum treatment"
               width={300}
               className="serviceImage"
@@ -90,7 +90,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Dental Veneers</h5>
             <img
-              src="public/images/Dental-Veneers.png"
+              src="/images/Dental-Veneers.png"
               alt="dental veneers"
               width={300}
               className="serviceImage"
@@ -103,7 +103,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Endodontic Canal Treatment</h5>
             <img
-              src="public/images/root-treatment.jpg"
+              src="/images/root-treatment.jpg"
               alt="root treatment"
               width={300}
               className="serviceImage"
@@ -116,7 +116,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Teeth Whitening</h5>
             <img
-              src="public/images/toothWhitening.jpg"
+              src="/images/toothWhitening.jpg"
               alt="tooth whitening"
               width={300}
               className="serviceImage"
@@ -129,7 +129,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Dental Bridges</h5>
             <img
-              src="public/images/dental-bridge.jpg"
+              src="/images/dental-bridge.jpg"
               alt="dental bridge"
               width={300}
               className="serviceImage"
@@ -142,7 +142,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Emergency Care</h5>
             <img
-              src="public/images/emergency-care.jpg"
+              src="/images/emergency-care.jpg"
               alt="emergency care"
               width={300}
               className="serviceImage"
@@ -155,7 +155,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Dental Crowns</h5>
             <img
-              src="public/images/crowns.jpg"
+              src="/images/crowns.jpg"
               alt="dental crowns"
               width={300}
               className="serviceImage"
@@ -168,7 +168,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Children Dentistry</h5>
             <img
-              src="public/images/children-dentistry.jpg"
+              src="/images/children-dentistry.jpg"
               alt="child dentistry"
               width={300}
               className="serviceImage"
@@ -181,7 +181,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Dental Implants</h5>
             <img
-              src="public/images/dental-implants.jpg"
+              src="/images/dental-implants.jpg"
               alt="dental implants"
               width={300}
               className="serviceImage"
@@ -194,7 +194,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Metal Free Dentistry</h5>
             <img
-              src="public/images/metal-free.jpeg"
+              src="/images/metal-free.jpeg"
               alt="non-metal dentistry"
               width={300}
               className="serviceImage"
@@ -207,7 +207,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Snoring Appliances</h5>
             <img
-              src="public/images/snoring-device.jpg"
+              src="/images/snoring-device.jpg"
               alt="snorning appliances"
               width={300}
               className="serviceImage"
@@ -220,7 +220,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Dentures</h5>
             <img
-              src="public/images/dentures.webp"
+              src="/images/dentures.webp"
               alt="dentures"
               width={300}
               className="serviceImage"
@@ -233,7 +233,7 @@ export default function Services(props) {
           <div className="service">
             <h5>Extractions</h5>
             <img
-              src="public/images/tooth-extractions.jpg"
+              src="/images/tooth-extractions.jpg"
               alt="extractions"
               width={300}
               className="serviceImage"
