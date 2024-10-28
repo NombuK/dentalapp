@@ -57,11 +57,21 @@ function App() {
     return (
       <div className="footer">
         <div className="referalLink">
-          <a href="">About Us</a>
-          <a href="">Contact Us</a>
-          <a href="">Book Now</a>
-          <a href="">Reviews</a>
-          <a href="">Privacy Policy</a>
+          <Link to="/#mainContent">
+            <a>About Us</a>
+          </Link>
+          <Link to="">
+            <a>Contact Us</a>
+          </Link>
+          <Link to="/button">
+            <a>Book Now</a>
+          </Link>
+          <Link to="/testimonial">
+            <a>Reviews</a>
+          </Link>
+          <Link>
+            <a>Privacy Policy</a>
+          </Link>
         </div>
 
         <Icons />
