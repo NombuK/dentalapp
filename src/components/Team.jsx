@@ -26,8 +26,7 @@ export default function Team(props) {
           <img
             src="/images/doc5.jpg"
             alt="doc 5"
-            width={500}
-            height={400}
+            className='teamImage-doc'
           />
           <p>
             <strong>Orthodontics</strong>
@@ -55,8 +54,7 @@ export default function Team(props) {
           <img
             src="/images/doc7.jpg"
             alt="doc 7"
-            width={500}
-            height={400}
+            className='teamImage-doc'
           />
         </div>
         <hr />
@@ -64,8 +62,7 @@ export default function Team(props) {
           <img
             src="/images/doc3.jpg"
             alt="doc 3"
-            width={500}
-            height={400}
+            className='teamImage-doc'
           />
           <p>
             <strong>Pediatric Dentistry</strong>
@@ -92,8 +89,7 @@ export default function Team(props) {
           <img
             src="/images/doc6.jpg"
             alt="doc 6"
-            width={500}
-            height={400}
+            className='teamImage-doc'
           />
         </div>
         <hr />
@@ -101,8 +97,7 @@ export default function Team(props) {
           <img
             src="/images/doc1.jpg"
             alt="doc 1"
-            width={500}
-            height={400}
+            className='teamImage-doc'
           />
           <p>
             <strong>Oral and Maxillofacial Surgery</strong>

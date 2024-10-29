@@ -226,6 +226,11 @@ button:hover i {
   margin-bottom: 30px;
 }
 
+.map-img{
+  width: 80%;
+  max-width: 600px;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -342,6 +347,12 @@ a {
   color: #1809e0;
 }
 
+.teamImage-doc{
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+}
+
 .profession {
   display: flex;
   justify-content: space-around;
@@ -367,6 +378,10 @@ a {
 .reviewStar {
   font-size: 35px;
   color: #ffd700;
+}
+
+.star-img{
+  width: 40%;
 }
 
 .reviewStarContainer {
@@ -632,10 +647,13 @@ a {
   .profession,
   .service p {
     max-width: 100%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  .serviceImage,
+ .serviceImage{
+  width: 40%;
+ }
+
   .patientImage {
     max-width: 200px;
     height: auto;

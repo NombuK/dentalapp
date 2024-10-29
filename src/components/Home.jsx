@@ -81,7 +81,7 @@ export default function Home(props) {
         </div>
         <div className="location">
           <p>Location</p>
-          <img src="/images/map.png" alt="map" width={600} />
+          <img src="/images/map.png" alt="map" className="map-img" />
           <br />
           <a href="https://www.google.com/maps/place/10+Park+St,+Bedfordview,+Germiston,+2008,+South+Africa/@-26.17795,28.137023,17z/data=!4m6!3m5!1s0x1e9512201475e261:0x7ed7018224fece80!8m2!3d-26.1779496!4d28.1370228!16s%2Fg%2F11hbnt6ytt?hl=en-US&entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D">
             Find On Map

@@ -26,7 +26,7 @@ export default function Testimonials(props) {
             satisfaction. But don't just take our word for it—see what our
             valued patients have to say about their experiences with us.
           </p>
-          <img src="/images/lab1.jpg" alt="" width={400} />
+          <img className="star-img" src="/images/lab1.jpg" alt="" width={400} />
         </div>
       </div>
     );
