@@ -260,7 +260,7 @@ a {
   margin: 5px 0;
 }
 
-.referalLink a {
+.referalLink-link {
   color: black;
 }
 
@@ -350,7 +350,7 @@ a {
 .teamImage-doc{
   width: 50%;
   max-width: 500px;
-  height: auto;
+  height: 500px;
 }
 
 .profession {
@@ -638,10 +638,16 @@ a {
   }
 
   .recommendations li,
-  .services {
+  .services, .referalLink {
     flex-direction: column;
     width: 90%;
     margin: 10px auto;
+  }
+
+  .referalLink{
+    gap: 20px;
+    text-align: center;
+    justify-content: space-around;
   }
 
   .profession,

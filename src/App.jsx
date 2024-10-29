@@ -57,21 +57,19 @@ function App() {
     return (
       <div className="footer">
         <div className="referalLink">
-          <Link to="/#mainContent">
-            <a>About Us</a>
+          <Link className="referalLink-link" to="/#mainContent">
+            About Us
           </Link>
-          <Link to="">
-            <a>Contact Us</a>
+          <Link className="referalLink-link" to="">
+            Contact Us
           </Link>
-          <Link to="/button">
-            <a>Book Now</a>
+          <Link className="referalLink-link" to="/button">
+            Book Now
           </Link>
-          <Link to="/testimonial">
-            <a>Reviews</a>
+          <Link className="referalLink-link" to="/testimonial">
+            Reviews
           </Link>
-          <Link>
-            <a>Privacy Policy</a>
-          </Link>
+          <Link className="referalLink-link">Privacy Policy</Link>
         </div>
 
         <Icons />

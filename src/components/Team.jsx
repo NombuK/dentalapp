@@ -6,14 +6,14 @@ export default function Team(props) {
 
   function Doctors() {
     return (
-      <div class="slideshow-container">
-        <img src="/images/doc1.jpg" alt="doc 1" class="slide" />
-        <img src="/images/doc2.jpg" alt="doc 2" class="slide" />
-        <img src="/images/doc3.jpg" alt="doc 3" class="slide" />
-        <img src="/images/doc4.jpg" alt="doc 4" class="slide" />
-        <img src="/images/doc5.jpg" alt="doc 5" class="slide" />
-        <img src="/images/doc6.jpg" alt="doc 6" class="slide" />
-        <img src="/images/doc7.jpg" alt="doc 7" class="slide" />
+      <div className="slideshow-container">
+        <img src="/images/doc1.jpg" alt="doc 1" className="slide" />
+        <img src="/images/doc2.jpg" alt="doc 2" className="slide" />
+        <img src="/images/doc3.jpg" alt="doc 3" className="slide" />
+        <img src="/images/doc4.jpg" alt="doc 4" className="slide" />
+        <img src="/images/doc5.jpg" alt="doc 5" className="slide" />
+        <img src="/images/doc6.jpg" alt="doc 6" className="slide" />
+        <img src="/images/doc7.jpg" alt="doc 7" className="slide" />
       </div>
     );
   }
