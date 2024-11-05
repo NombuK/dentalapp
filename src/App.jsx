@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Home from "./components/Home";
 import Pricing from "./components/Pricing";
 import Team from "./components/Team";
@@ -11,31 +13,44 @@ import Athena from "./components/Athena";
 
 function Header() {
   const navigate = useNavigate();
+  const [isHeaderOpen, setIsHeaderOpen] = useState(false);
+
+  const toggleHeader = () => {
+    setIsHeaderOpen(!isHeaderOpen);
+  };
   return (
     <div id="mainContent">
-      <div className="header">
+      {/* <div className="header"> */}
+      <div className={`header ${isHeaderOpen ? "open" : ""}`}>
+        <button className="header-toggle" onClick={toggleHeader}>
+          <i className="fa-solid fa-bars"></i> {/* Hamburger icon */}
+        </button>
+
         <div className="toothIcon">
           <i className="fa-solid fa-tooth icon-tooth"></i>
           <h4>LumiDent Care</h4>
         </div>
-        <Link className="name" to="/services">
-          Services
-        </Link>
-        <Link className="name" to="/pricing">
-          Pricing
-        </Link>
-        <Link className="name" to="/team">
-          Team
-        </Link>
-        <Link className="name" to="/testimonial">
-          Testimonials
-        </Link>
-        <Link className="name" to="/#mainContent">
-          Home
-        </Link>
-        <button className="headerButton" onClick={() => navigate("/button")}>
-          Book Now!!
-        </button>
+
+        <div className={`header-links ${isHeaderOpen ? "show" : ""}`}>
+          <Link className="name" to="/services">
+            Services
+          </Link>
+          <Link className="name" to="/pricing">
+            Pricing
+          </Link>
+          <Link className="name" to="/team">
+            Team
+          </Link>
+          <Link className="name" to="/testimonial">
+            Testimonials
+          </Link>
+          <Link className="name" to="/#mainContent">
+            Home
+          </Link>
+          <button className="headerButton" onClick={() => navigate("/button")}>
+            Book Now!!
+          </button>
+        </div>
       </div>
     </div>
   );
